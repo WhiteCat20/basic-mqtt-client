@@ -5,7 +5,7 @@ import mqtt from "mqtt";
 const MqttPublisher = () => {
   const [client, setClient] = useState(null);
   const [isChecked, setChecked] = useState(null);
-  const brokerUrl = "ws://broker.emqx.io:8083/mqtt";
+  const brokerUrl = "wss://broker.emqx.io:8084/mqtt";
   const topic = "test/relay/faiz";
 
   useEffect(() => {
