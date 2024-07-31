@@ -3,7 +3,7 @@ import mqtt from "mqtt";
 
 const MqttSubscriber = () => {
   const [message, setMessage] = useState("not yet");
-  const brokerUrl = "ws://broker.emqx.io:8083/mqtt"; // Using WebSocket
+  const brokerUrl = "wss://broker.emqx.io:8084/mqtt"; // Using WebSocket
   const topic = "test/relay/faiz";
 
   useEffect(() => {
